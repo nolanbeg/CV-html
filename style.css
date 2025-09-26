@@ -1,0 +1,139 @@
+/* Réinitialisation et base */
+body {
+    color: #2c3e50; /* Bleu foncé pour une meilleure lisibilité */
+    background-color: #f8f9fa; /* Fond clair et professionnel */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne par défaut */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Le cadre du CV */
+.cv-container {
+    border: 2px solid #2c3e50;
+    border-radius: 15px; /* Angles légèrement arrondis pour un look moderne */
+    padding: 30px;
+    width: 80%;
+    max-width: 900px; /* Largeur maximale pour éviter que le CV ne soit trop large */
+    margin: 0 auto; /* Centrer le CV */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère pour le relief */
+    background-color: white; /* Fond blanc pour le contenu */
+}
+
+/* Titre principal (nom) */
+.cv-container h1 {
+    font-family: 'Montserrat', sans-serif; /* Police moderne et lisible */
+    font-size: 2.5em;
+    color: #2c3e50;
+    padding: 10px 0;
+    border-left: 5px solid #3498db; /* Bleu clair pour un accent moderne */
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Sous-titres (sections) */
+.cv-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin: 20px 0 10px 0;
+    padding: 5px 0;
+    border-left: 3px solid #3498db;
+    display: block; /* Retour à la ligne pour les sections */
+}
+
+/* Texte général */
+.cv-container p {
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Mise en valeur des éléments importants */
+.cv-container strong {
+    font-size: 1.1em;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Liste à puces et numérotée */
+.cv-container ul, .cv-container ol {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.cv-container ul li, .cv-container ol li {
+    font-size: 1em;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+/* Style pour les dates et lieux */
+.cv-container .date-lieu {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.95em;
+}
+
+/* Style pour les listes de compétences ou tâches */
+.cv-container ul {
+    list-style-type: square; /* Puces carrées pour un look moderne */
+}
+
+/* Image (photo) */
+.cv-container img {
+    float: right;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    max-width: 150px; /* Taille maximale pour la photo */
+}
+
+/* Liens */
+.cv-container a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.cv-container a:hover {
+    text-decoration: underline;
+}
+
+/* En-tête des sections */
+.section-header {
+    background-color: #f1f9ff; /* Fond bleu très clair pour les en-têtes de section */
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Pied de page ou signature */
+.signature {
+    font-family: 'Georgia', serif;
+    color: #e74c3c; /* Rouge pour attirer l'attention */
+    font-weight: 700;
+    font-style: italic;
+    text-align: right;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive : adaptation pour les petits écrans */
+@media (max-width: 768px) {
+    .cv-container {
+        width: 95%;
+        padding: 15px;
+    }
+    .cv-container img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
